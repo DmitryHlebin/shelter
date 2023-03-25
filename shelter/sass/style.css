@@ -108,7 +108,6 @@ h5 {
   line-height: 2.21rem;
   color: #292929;
 }
-
 .button_color {
   background-color: #F1CDB3;
   border: none;
@@ -117,7 +116,6 @@ h5 {
   transition: all 0.3s ease-in-out;
   background-color: #FDDCC4;
 }
-
 .button_border {
   border: 2px solid #F1CDB3;
   background-color: #FFFFFF;
@@ -130,6 +128,25 @@ h5 {
 
 .header-promo-wrapper {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.promo {
+  padding-top: 60px;
+}
+
+.promo__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promo__content {
+  max-width: 38.5%;
+}
+
+.promo__discription {
+  padding: 42px 0;
 }
 
 .friends {
