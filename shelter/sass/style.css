@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* fonts */
+@font-face {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Georgia-Bold"), local("Georgia Bold"), url("/fonts/georgia-bold.woff2") format("woff2"), url("/fonts/georgia-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Georgia";
+  font-style: italic;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Georgia-Bold-Italic"), local("Georgia Bold Italic"), url("/fonts/georgia-bold-italic.woff2") format("woff2"), url("/fonts/georgia-bold-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Arial-Bold-Italic"), local("Arial Bold Italic"), url("/fonts/arial-bold-italic.woff2") format("woff2"), url("/fonts/arial-bold-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Arial-Bold"), local("Arial Bold"), url("/fonts/arial-bold.woff2") format("woff2"), url("/fonts/arial-bold.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 3.52rem;
+  color: #F1CDB3;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.4rem;
+  line-height: 5.72rem;
+  color: #FFFFFF;
+}
+
+h3 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.55rem;
+  color: #545454;
+}
+
+h4 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #545454;
+}
+
+h5 {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  color: #545454;
+}
+
+.paragraph-l {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #CDCDCD;
+}
+
+.button {
+  padding: 15px 45px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 2.21rem;
+  color: #292929;
+}
+
+.button_color {
+  background-color: #F1CDB3;
+  border: none;
+}
+.button_color:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #FDDCC4;
+}
+
+.button_border {
+  border: 2px solid #F1CDB3;
+  background-color: #FFFFFF;
+}
+.button_border:hover {
+  transition: all 0.3s ease-in-out;
+  border: 2px solid #FDDCC4;
+  background-color: #FDDCC4;
+}
+
+.header-promo-wrapper {
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.friends {
+  background: #F6F6F6;
+}
+
+.donation {
+  background: #F6F6F6;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header {
+  padding-top: 60px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo:hover h1 {
+  transition: all 0.3s ease-in-out;
+  color: #FDDCC4;
+}
+.header__logo p {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.495rem;
+  color: #FFFFFF;
+}
+
+.navigation__link {
+  padding: 0 17px;
+  list-style: none;
+}
+.navigation__link:last-child {
+  padding: 0;
+}
+.navigation__link a {
+  text-decoration: none;
+}
+.navigation__link a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #FAFAFA;
+}
+
+.navigation__wrapper {
+  display: flex;
+}
+
+.aktive-link {
+  border-bottom: 3px solid #F1CDB3;
+  color: #FAFAFA;
+}
+
+.footer {
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+/*# sourceMappingURL=style.css.map */

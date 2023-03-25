@@ -1,0 +1,25 @@
+.button{
+    padding: 15px 45px;
+    border-radius: 100px;
+    cursor: pointer;
+    @include font(1.7rem, 2.21rem, $color-dark-3xl)
+}
+
+.button_color{
+    background-color: $color-primary;
+    border: none;
+    &:hover {
+        transition: all 0.3s ease-in-out;
+        background-color: $color-primary-light;
+    }
+}
+
+.button_border{
+   border: 2px solid $color-primary;
+    background-color: $color-light-xl;
+    &:hover { 
+        transition: all 0.3s ease-in-out;
+        border: 2px solid $color-primary-light;
+        background-color: $color-primary-light;
+    }
+}
