@@ -30,17 +30,13 @@
     background-image: url("../assets/icons/arrow-pagination.svg");
     border: 2px solid $color-dark-s;
     @extend %arrow-pagination;
-}
-
-.arrow-pagination{
-    background-image: url("../assets/icons/arrow-pagination.svg");
-    border: 2px solid $color-dark-s;
-    @extend %arrow-pagination;
+    padding: 18px 24px;
 }
 
 .arrows-pagination{
     background-image: url("../assets/icons/arrows-pagination.svg");
     border: 2px solid $color-dark-s;
+    padding: 18px 24px;
     @extend %arrow-pagination;
 }
 
@@ -48,31 +44,36 @@
     background-image: url("../assets/icons/arrow-pagination-colored.svg");
     border: 2px solid $color-primary;
     cursor: pointer;
+    padding: 18px 24px;
     @extend %arrow-pagination;
     &:hover{
         transition: all 0.3s ease-in-out;
         border: 2px solid $color-primary-light;
+        background-color: $color-primary-light;
     }
 }
 
 .arrows-pagination-colored{
     background-image: url("../assets/icons/arrows-pagination-colored.svg");
     border: 2px solid $color-primary;
+    padding: 18px 24px;
     cursor: pointer;
     @extend %arrow-pagination;
     &:hover{
         transition: all 0.3s ease-in-out;
         border: 2px solid $color-primary-light;
+        background-color: $color-primary-light;
     }
 }
 
 .number-pagination{
-    padding: 24px 24px;
+    padding: 15px 21px;
     border-radius: 100px;
     background-color: $color-primary;
+    @include font(2.0rem, 2.3rem, $color-dark-l);
     cursor: pointer;
     &:hover{
         transition: all 0.3s ease-in-out;
-        border: 2px solid $color-primary-light;
+        background-color: $color-primary-light;
     }
 } 

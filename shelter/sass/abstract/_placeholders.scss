@@ -1,7 +1,6 @@
 %arrow-pagination{
     background-repeat: no-repeat;
     background-position: center;
-    padding: 24px 24px;
     border-radius: 100px;
 }
 
@@ -12,5 +11,9 @@
             text-decoration: none;
             @include font(2.0rem, 2.3rem, $color-primary);
             padding-left: 20px;
+        &:hover{
+           transition: all 0.3s ease-in-out;
+           color: $color-primary-light;
+        }
         }
 }

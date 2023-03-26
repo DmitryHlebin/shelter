@@ -27,6 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -35,6 +36,16 @@
     padding-bottom: 30px;
     background-color: $color-light-s;
     border-radius: 9px;
+    cursor: pointer;
+    &:hover{
+        button{
+                transition: all 0.3s ease-in-out;
+                background-color: $color-primary-light;
+        }
+        img{
+            background-color: $color-light-l;
+        }
+    }
 }
 
 .item__title{
