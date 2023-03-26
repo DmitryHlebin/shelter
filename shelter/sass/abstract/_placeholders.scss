@@ -4,3 +4,13 @@
     padding: 24px 24px;
     border-radius: 100px;
 }
+
+%footer-link{
+    display: flex;
+    align-items: center;
+        a{
+            text-decoration: none;
+            @include font(2.0rem, 2.3rem, $color-primary);
+            padding-left: 20px;
+        }
+}

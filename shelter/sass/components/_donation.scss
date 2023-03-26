@@ -37,6 +37,11 @@
         padding: 0 15px;
         vertical-align: middle;
     }
+
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        background-color: $color-primary-light;
+    }
 }
 
 .donation__subscribe{
