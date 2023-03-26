@@ -338,6 +338,58 @@ h5 {
 
 .donation {
   background: #F6F6F6;
+  padding: 80px 0 100px 0;
+}
+
+.donation__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.donation__wrapper img {
+  padding-top: 10px;
+}
+
+.donation__content {
+  max-width: 380px;
+  padding-left: 30px;
+}
+.donation__content h5 {
+  padding: 20px;
+}
+
+.donation__icon {
+  display: flex;
+  max-width: 352px;
+  padding: 10px 0;
+  background-color: #F1CDB3;
+  border-radius: 9px;
+  text-decoration: none;
+}
+.donation__icon svg {
+  vertical-align: middle;
+  padding-left: 15px;
+}
+.donation__icon p {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #545454;
+  text-decoration: none;
+  padding: 0 15px;
+  vertical-align: middle;
+}
+
+.donation__subscribe {
+  padding-top: 20px;
+  font-family: Arial;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #B2B2B2;
 }
 
 .wrapper {
