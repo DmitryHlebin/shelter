@@ -1,11 +1,14 @@
 //abstract
 @import "abstract/constants";
 @import "abstract/mixins";
+@import "abstract/placeholders";
+
 
 //base
 @import "base/base";
 @import "base/buttons";
 @import "base/slider";
+@import "base/arrows";
 
 //component
 @import "components/promo";

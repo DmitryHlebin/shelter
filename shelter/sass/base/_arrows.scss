@@ -1,0 +1,78 @@
+.arrow{
+    background-image: url("../assets/icons/arrow.svg");
+    border: 2px solid $color-primary;
+    @extend %arrow-pagination;
+    cursor: pointer;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        background-color: $color-primary-light;
+        border: 2px solid $color-primary-light;
+    }
+
+    &_right{
+        transform: rotate(0.5turn);
+    }
+}
+
+.cross{
+    background-image: url("../assets/icons/cross.svg");
+    border: 2px solid $color-primary;
+    @extend %arrow-pagination;
+    cursor: pointer;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        background-color: $color-primary-light;
+        border: 2px solid $color-primary-light;
+    }
+}
+
+.arrow-pagination{
+    background-image: url("../assets/icons/arrow-pagination.svg");
+    border: 2px solid $color-dark-s;
+    @extend %arrow-pagination;
+}
+
+.arrow-pagination{
+    background-image: url("../assets/icons/arrow-pagination.svg");
+    border: 2px solid $color-dark-s;
+    @extend %arrow-pagination;
+}
+
+.arrows-pagination{
+    background-image: url("../assets/icons/arrows-pagination.svg");
+    border: 2px solid $color-dark-s;
+    @extend %arrow-pagination;
+}
+
+.arrow-pagination-colored{
+    background-image: url("../assets/icons/arrow-pagination-colored.svg");
+    border: 2px solid $color-primary;
+    cursor: pointer;
+    @extend %arrow-pagination;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        border: 2px solid $color-primary-light;
+    }
+}
+
+.arrows-pagination-colored{
+    background-image: url("../assets/icons/arrows-pagination-colored.svg");
+    border: 2px solid $color-primary;
+    cursor: pointer;
+    @extend %arrow-pagination;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        border: 2px solid $color-primary-light;
+    }
+}
+
+.number-pagination{
+    padding: 24px 24px;
+    border-radius: 100px;
+    background-color: $color-primary;
+    cursor: pointer;
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        border: 2px solid $color-primary-light;
+    }
+} 

@@ -1,3 +1,43 @@
 .friends{
     background: $color-light-l;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.friends__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3{
+        max-width: 450px;
+        text-align: center;
+    }
+
+}
+.slider{
+    padding: 60px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.slider__item{
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: $color-light-s;
+    border-radius: 9px;
+}
+
+.item__title{
+   @include font(2.0rem, 2.272rem, $color-dark-l);
+   padding: 25px 0;
 }
