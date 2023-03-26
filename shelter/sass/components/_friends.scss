@@ -24,8 +24,10 @@
 }
 
 .slider__items{
+    max-width: 990px;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -41,6 +43,7 @@
         button{
                 transition: all 0.3s ease-in-out;
                 background-color: $color-primary-light;
+                border: 2px solid $color-primary-light;
         }
         img{
             background-color: $color-light-l;

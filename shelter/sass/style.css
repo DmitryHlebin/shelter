@@ -305,8 +305,10 @@ h5 {
 }
 
 .slider__items {
+  max-width: 990px;
+  margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -322,6 +324,7 @@ h5 {
 .slider__item:hover button {
   transition: all 0.3s ease-in-out;
   background-color: #FDDCC4;
+  border: 2px solid #FDDCC4;
 }
 .slider__item:hover img {
   background-color: #F6F6F6;
@@ -372,7 +375,7 @@ h5 {
 
 .donation {
   background: #F6F6F6;
-  padding: 80px 0 100px 0;
+  padding: 80px 0 105px 0;
 }
 
 .donation__wrapper {
@@ -562,7 +565,7 @@ h5 {
 }
 
 .pets__wrapper {
-  padding: 80px 0 100px 0;
+  padding: 80px 0 105px 0;
 }
 .pets__wrapper h3 {
   text-align: center;
@@ -570,11 +573,15 @@ h5 {
 }
 
 .slider__item_pets {
-  padding-top: 30px;
+  margin-top: 33px;
 }
 
 .pets__pagination {
+  padding-top: 60px;
   display: flex;
+  justify-content: space-between;
+  max-width: 340px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
