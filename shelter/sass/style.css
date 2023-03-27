@@ -491,6 +491,7 @@ h5 {
   padding-bottom: 2px;
   border-bottom: 3px solid #F1CDB3;
   color: #FAFAFA;
+  text-decoration: none;
 }
 
 .footer {
@@ -555,7 +556,7 @@ h5 {
   color: #292929;
 }
 
-.navigation__link_pets a:hover {
+.navigation__link_pets .navigation__link_text:hover {
   transition: all 0.3s ease-in-out;
   color: #292929;
 }
@@ -570,6 +571,10 @@ h5 {
 .pets__wrapper h3 {
   text-align: center;
   padding-bottom: 30px;
+}
+
+.slider__items_pets {
+  max-width: 100%;
 }
 
 .slider__item_pets {

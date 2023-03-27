@@ -33,11 +33,13 @@
         padding: 0;
     }
     a{
-        text-decoration: none;
-        &:hover{
-            transition: all 0.3s ease-in-out;
-            color: $color-light-s;
-        }
+     
+            text-decoration: none;
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                color: $color-light-s;
+            }
+        
     }
 }
 
@@ -49,4 +51,5 @@
     padding-bottom: 2px;
     border-bottom: 3px solid $color-primary;
     color: $color-light-s;
+    text-decoration: none;
 }
