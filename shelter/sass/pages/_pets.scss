@@ -1,0 +1,64 @@
+.header_pets{
+    padding: 30px 0;
+}
+.header__logo_pets{
+    h1{
+        color: $color-dark-l;
+    }
+    p{
+        color: $color-dark-3xl;     
+    }
+
+    &:hover{
+        h1{
+            transition: all 0.3s ease-in-out;
+            color: $color-dark-3xl;
+        }
+    }
+}
+
+.navigation__link_text{
+    color: $color-dark-l;
+}
+
+.aktive-link-pets{
+    padding-bottom: 2px;
+    border-bottom: 3px solid $color-primary;
+    color: $color-dark-3xl;
+}
+
+.navigation__link_pets{
+    .navigation__link_text{   
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                color: $color-dark-3xl;
+            }
+    }
+}
+
+.pets{
+    background-color: $color-light-l;
+}
+.pets__wrapper{
+    padding: 80px 0 105px 0;
+    h3{
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+
+.slider__items_pets{
+    max-width: 100%;
+}
+
+.slider__item_pets{
+    margin-top: 33px;
+}
+
+.pets__pagination{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 340px;
+    margin: auto;
+}

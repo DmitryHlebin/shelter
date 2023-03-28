@@ -1,0 +1,26 @@
+//abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+@import "abstract/placeholders";
+
+
+//base
+@import "base/base";
+@import "base/buttons";
+@import "base/slider";
+@import "base/arrows";
+
+//component
+@import "components/promo";
+@import "components/about";
+@import "components/friends";
+@import "components/help";
+@import "components/donation";
+
+//layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/footer";
+
+//pages
+@import "pages/pets"

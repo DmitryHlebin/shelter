@@ -1,0 +1,41 @@
+.footer{
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    padding-top: 50px;
+}
+
+.footer__wrapper{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+.footer_question{
+    max-width: 290px;
+    h3{
+       color: $color-light-xl;
+    }
+}
+
+.footer__phone{
+padding-top: 40px;
+@extend %footer-link;
+}
+
+.footer__email{
+    padding-top: 40px;
+    @extend %footer-link;
+}
+
+.footer__adress{
+    padding-top: 25px;
+    @extend %footer-link;
+}
+
+
+
+.footer_visit{
+    max-width: 290px;
+    h3{
+       color: $color-light-xl;
+    }
+}

@@ -1,0 +1,50 @@
+.donation{
+    background: $color-light-l;
+    padding: 80px 0 105px 0;
+}
+
+.donation__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items:start;
+    img{
+        padding-top: 10px;
+    }
+    
+}
+
+.donation__content{
+    max-width: 380px;
+    padding-left: 30px;
+    h5{
+        padding: 20px;
+    }
+}
+.donation__icon {
+    display: flex;
+    max-width: 355px;
+    padding: 10px 0;
+    background-color: $color-primary;
+    border-radius: 9px;
+    text-decoration: none;
+    svg{
+        vertical-align: middle;
+        padding-left: 15px;
+    }
+    p{
+        @include font(2.0rem, 2.3rem, $color-dark-l);
+        text-decoration: none;
+        padding: 0 15px;
+        vertical-align: middle;
+    }
+
+    &:hover{
+        transition: all 0.3s ease-in-out;
+        background-color: $color-primary-light;
+    }
+}
+
+.donation__subscribe{
+    padding-top: 20px;
+    @include font(1.2rem, 1.8rem, $color-dark-m, Arial, italic);
+}

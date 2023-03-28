@@ -1,0 +1,19 @@
+%arrow-pagination{
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100px;
+}
+
+%footer-link{
+    display: flex;
+    align-items: center;
+        a{
+            text-decoration: none;
+            @include font(2.0rem, 2.3rem, $color-primary);
+            padding-left: 20px;
+        &:hover{
+           transition: all 0.3s ease-in-out;
+           color: $color-primary-light;
+        }
+        }
+}
