@@ -154,6 +154,7 @@ h5 {
 .arrow {
   background-image: url("../assets/icons/arrow.svg");
   border: 2px solid #F1CDB3;
+  padding: 23px 19px;
   cursor: pointer;
 }
 .arrow:hover {
