@@ -35,12 +35,13 @@
     @include media-tablet{
         padding-bottom: 100px;
         max-width: 65%;
+        form{
+            display: flex;
+            justify-content: center;
+        }
     }
 
-    form{
-        display: flex;
-        justify-content: center;
-    }
+ 
 
     @include media-mobile{
         padding-bottom: 0;

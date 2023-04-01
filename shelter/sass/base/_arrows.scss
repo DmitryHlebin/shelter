@@ -2,7 +2,7 @@
     background-image: url("../assets/icons/arrow.svg");
     border: 2px solid $color-primary;
     @extend %arrow-pagination;
-    padding: 23px 19px;
+    padding: 24px 24px;
     cursor: pointer;
     &:hover{
         transition: all 0.3s ease-in-out;
