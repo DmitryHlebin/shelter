@@ -68,10 +68,21 @@ h1{
 
 h2{
     @include font(4.4rem, 5.72rem, $color-light-xl);
+    @include media-tablet {
+        font-size: 3.8rem
+    }
+    
+    @include media-mobile {
+        @include font(2.5rem, 3.25rem, $color-light-xl); 
+        text-align: center;
+    }
 }
 
 h3{
     @include font(3.5rem, 4.55rem, $color-dark-l);
+    @include media-mobile {
+        @include font(2.5rem, 3.25rem, $color-dark-l); 
+    }
 }
 
 h4{
@@ -84,4 +95,11 @@ h5{
 
 .paragraph-l{
     @include font(1.5rem, 2.4rem, $color-dark-s, Arial);
+    @include media-tablet {
+        font-size: 1.37rem;
+    }
+    @include media-mobile {
+        padding: 40px 0 42px;
+        font-size: 1.44rem;
+    }
 }

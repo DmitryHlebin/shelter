@@ -4,6 +4,7 @@
 
 .promo{
    padding-top: 60px;
+   overflow: hidden;
 }
 
 .promo__wrapper {
@@ -11,14 +12,44 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include media-tablet{
+        justify-content: center;
+        img{
+            max-width: 80%;
+            padding-left: 150px;
+        }
+    }
+
+    @include media-mobile{
+        img{
+            max-width: 85%;
+            padding-top: 112px;
+            padding-left: 30px;
+        }
+    }
 }
 
 .promo__content{
     max-width: 38.5%;
     padding-bottom: 80px;
+    @include media-tablet{
+        padding-bottom: 100px;
+        max-width: 65%;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+    }
+
+    @include media-mobile{
+        padding-bottom: 0;
+        max-width: 100%;
+    }
 }
 
 .promo__discription{
     padding: 42px 0;
     text-align: justify;
 }
+

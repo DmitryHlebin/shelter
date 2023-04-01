@@ -85,6 +85,22 @@ h2 {
   line-height: 5.72rem;
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 320px) {
+  h2 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
 
 h3 {
   font-family: Georgia;
@@ -93,6 +109,16 @@ h3 {
   font-size: 3.5rem;
   line-height: 4.55rem;
   color: #545454;
+}
+@media (max-width: 320px) {
+  h3 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    color: #545454;
+  }
 }
 
 h4 {
@@ -120,6 +146,17 @@ h5 {
   font-size: 1.5rem;
   line-height: 2.4rem;
   color: #CDCDCD;
+}
+@media (max-width: 768px) {
+  .paragraph-l {
+    font-size: 1.37rem;
+  }
+}
+@media (max-width: 320px) {
+  .paragraph-l {
+    padding: 40px 0 42px;
+    font-size: 1.44rem;
+  }
 }
 
 .button {
@@ -230,12 +267,48 @@ h5 {
   background-color: #FDDCC4;
 }
 
+.hamburger__line, .hamburger:after, .hamburger:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-color: #F1CDB3;
+  width: 30px;
+  height: 2px;
+}
+
+.hamburger {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  display: none;
+}
+@media (max-width: 320px) {
+  .hamburger {
+    display: block;
+    padding-right: 40px;
+  }
+}
+.hamburger:before {
+  top: 0;
+  left: 0;
+}
+.hamburger:after {
+  bottom: 0;
+  left: 0;
+}
+
+.hamburger__line {
+  top: calc(50% - 1px);
+}
+
 .header-promo-wrapper {
   background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .promo {
   padding-top: 60px;
+  overflow: hidden;
 }
 
 .promo__wrapper {
@@ -244,10 +317,42 @@ h5 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 768px) {
+  .promo__wrapper {
+    justify-content: center;
+  }
+  .promo__wrapper img {
+    max-width: 80%;
+    padding-left: 150px;
+  }
+}
+@media (max-width: 320px) {
+  .promo__wrapper img {
+    max-width: 85%;
+    padding-top: 112px;
+    padding-left: 30px;
+  }
+}
 
 .promo__content {
   max-width: 38.5%;
   padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+  .promo__content {
+    padding-bottom: 100px;
+    max-width: 65%;
+  }
+}
+.promo__content form {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 320px) {
+  .promo__content {
+    padding-bottom: 0;
+    max-width: 100%;
+  }
 }
 
 .promo__discription {
@@ -259,6 +364,16 @@ h5 {
   padding-top: 80px;
   padding-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .about {
+    padding-top: 68px;
+  }
+}
+@media (max-width: 320px) {
+  .about {
+    padding-top: 25px;
+  }
+}
 
 .about__wrapper {
   display: flex;
@@ -268,6 +383,17 @@ h5 {
 }
 .about__wrapper img {
   padding-right: 100px;
+  padding-top: 100px;
+}
+@media (max-width: 768px) {
+  .about__wrapper {
+    flex-direction: column-reverse;
+  }
+  .about__wrapper img {
+    max-width: 260px;
+    padding-right: 0;
+    padding-top: 37px;
+  }
 }
 
 .about__content {
@@ -279,6 +405,25 @@ h5 {
 }
 .about__content p:last-child {
   padding-top: 25px;
+}
+.about__content .paragraph-l {
+  color: #4C4C4C;
+}
+@media (max-width: 768px) {
+  .about__content {
+    max-width: 60%;
+  }
+}
+@media (max-width: 320px) {
+  .about__content {
+    max-width: 90%;
+    text-align: center;
+  }
+  .about__content .paragraph-l {
+    padding: 0;
+    text-align: justify;
+    font-size: 1.42rem;
+  }
 }
 
 .friends {
@@ -438,9 +583,24 @@ h5 {
   max-width: 1200px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 708px;
+  }
+}
+@media (max-width: 320px) {
+  .wrapper {
+    max-width: 300px;
+  }
+}
 
 .header {
   padding-top: 60px;
+}
+@media (max-width: 768px) {
+  .header {
+    padding-top: 30px;
+  }
 }
 
 .header__wrapper {
@@ -448,7 +608,6 @@ h5 {
   justify-content: space-between;
   align-items: center;
 }
-
 .header__logo {
   text-decoration: none;
   display: flex;
@@ -483,6 +642,11 @@ h5 {
   transition: all 0.3s ease-in-out;
   color: #FAFAFA;
 }
+@media (max-width: 768px) {
+  .navigation__link .paragraph-l {
+    font-size: 1.5rem;
+  }
+}
 
 .navigation__wrapper {
   display: flex;
@@ -493,6 +657,12 @@ h5 {
   border-bottom: 3px solid #F1CDB3;
   color: #FAFAFA;
   text-decoration: none;
+}
+
+@media (max-width: 320px) {
+  .header__navigation {
+    display: none;
+  }
 }
 
 .footer {

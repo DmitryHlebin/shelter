@@ -1,10 +1,16 @@
 .header{
     padding-top: 60px;
+    @include media-tablet{
+        padding-top: 30px;   
+    }
 }
 .header__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-mobile {
+
+    }
 }
 
 .header__logo{
@@ -41,6 +47,11 @@
             }
         
     }
+    @include media-tablet {
+        .paragraph-l{
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .navigation__wrapper {
@@ -52,4 +63,10 @@
     border-bottom: 3px solid $color-primary;
     color: $color-light-s;
     text-decoration: none;
+}
+
+.header__navigation{
+    @include media-mobile {
+        display: none;
+    }
 }
