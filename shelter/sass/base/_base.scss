@@ -87,6 +87,9 @@ h3{
 
 h4{
     @include font(2.0rem, 2.3rem, $color-dark-l);
+    @include media-mobile {
+        @include font(1.5rem, 1.65rem, $color-dark-l);
+    }
 }
 
 h5{

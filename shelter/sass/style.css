@@ -129,6 +129,16 @@ h4 {
   line-height: 2.3rem;
   color: #545454;
 }
+@media (max-width: 320px) {
+  h4 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    color: #545454;
+  }
+}
 
 h5 {
   font-family: Georgia;
@@ -563,6 +573,16 @@ h5 {
 .help {
   padding: 80px 0 100px 0;
 }
+@media (max-width: 768px) {
+  .help {
+    padding: 86px 0 103px 0;
+  }
+}
+@media (max-width: 320px) {
+  .help {
+    padding: 43px 0 103px 0;
+  }
+}
 
 .help__wrapper {
   display: flex;
@@ -570,27 +590,53 @@ h5 {
   align-items: center;
 }
 .help__wrapper h3 {
-  max-width: 308px;
+  max-width: 320px;
   text-align: center;
 }
 
 .help__items {
+  padding-top: 59px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 55px 120px;
+}
+@media (max-width: 768px) {
+  .help__items {
+    justify-content: space-evenly;
+    max-width: 630px;
+    gap: 50px 84px;
+  }
+}
+@media (max-width: 320px) {
+  .help__items {
+    justify-content: center;
+    padding-top: 36px;
+    gap: 25px 56px;
+  }
+  .help__items:last-child {
+    justify-content: flex-start;
+  }
 }
 
 .help__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 55px 60px 0 60px;
+  justify-content: center;
 }
 
 .help__icon {
   padding-bottom: 30px;
+}
+@media (max-width: 320px) {
+  .help__icon {
+    padding-bottom: 14px;
+  }
+  .help__icon svg {
+    max-width: 50px;
+  }
 }
 
 .donation {
