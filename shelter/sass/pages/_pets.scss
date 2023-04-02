@@ -45,10 +45,19 @@
         text-align: center;
         padding-bottom: 30px;
     }
+    @include media-tablet {
+        h3{
+            padding-bottom: 0;
+        }
+    }
 }
 
 .slider__items_pets{
     max-width: 100%;
+    @include media-tablet{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .slider__item_pets{
@@ -61,4 +70,11 @@
     justify-content: space-between;
     max-width: 340px;
     margin: auto;
+}
+
+.pets__slider{
+    @include media-tablet {
+        max-height: 1365px;
+        overflow: hidden;
+    }
 }

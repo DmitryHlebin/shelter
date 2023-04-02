@@ -23,6 +23,11 @@
   transition: all 0.3s ease-in-out;
   color: #FDDCC4;
 }
+@media (max-width: 320px) {
+  .footer__adress, .footer__email, .footer__phone {
+    justify-content: center;
+  }
+}
 
 /* fonts */
 @font-face {
@@ -863,11 +868,31 @@ h5 {
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   padding-top: 50px;
 }
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 29px;
+  }
+}
+
 .footer__wrapper {
   display: flex;
   align-items: top;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    justify-content: center;
+    gap: 63px 48px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__wrapper {
+    gap: 39px 48px;
+  }
+  .footer__wrapper img {
+    max-width: 87%;
+  }
 }
 
 .footer_question {
@@ -875,6 +900,11 @@ h5 {
 }
 .footer_question h3 {
   color: #FFFFFF;
+}
+@media (max-width: 320px) {
+  .footer_question {
+    text-align: center;
+  }
 }
 
 .footer__phone {
@@ -884,9 +914,29 @@ h5 {
 .footer__email {
   padding-top: 40px;
 }
+@media (max-width: 768px) {
+  .footer__email {
+    padding-top: 38px;
+  }
+}
 
 .footer__adress {
   padding-top: 25px;
+}
+@media (max-width: 768px) {
+  .footer__adress {
+    padding-top: 21px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__adress {
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+  .footer__adress a {
+    padding-left: 15px;
+    font-size: 1.93rem;
+  }
 }
 
 .footer_visit {
@@ -894,6 +944,11 @@ h5 {
 }
 .footer_visit h3 {
   color: #FFFFFF;
+}
+@media (max-width: 320px) {
+  .footer_visit {
+    text-align: center;
+  }
 }
 
 .header_pets {
@@ -937,9 +992,20 @@ h5 {
   text-align: center;
   padding-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .pets__wrapper h3 {
+    padding-bottom: 0;
+  }
+}
 
 .slider__items_pets {
   max-width: 100%;
+}
+@media (max-width: 768px) {
+  .slider__items_pets {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .slider__item_pets {
@@ -952,6 +1018,13 @@ h5 {
   justify-content: space-between;
   max-width: 340px;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .pets__slider {
+    max-height: 1365px;
+    overflow: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

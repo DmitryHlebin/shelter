@@ -16,4 +16,9 @@
            color: $color-primary-light;
         }
         }
+
+        @include media-mobile {
+            justify-content: center;
+            
+        }
 }
