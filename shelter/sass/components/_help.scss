@@ -1,10 +1,10 @@
 .help{
     padding: 80px 0 100px 0;
     @include media-tablet {
-        padding: 86px 0 103px 0;   
+        padding: 82px 0 100px 0;   
     }
     @include media-mobile {
-        padding: 43px 0 103px 0; 
+        padding: 43px 0 40px 0; 
     }
 }
 
@@ -26,9 +26,10 @@
     flex-wrap: wrap;
     gap: 55px 120px;
     @include media-tablet {
+        padding-top: 56px;
         justify-content: space-evenly;
         max-width: 630px;
-        gap: 50px 84px;
+        gap: 53px 84px;
     }
     @include media-mobile {
         justify-content:center;
