@@ -866,7 +866,7 @@ h5 {
 
 .footer {
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  padding-top: 50px;
+  padding-top: 57px;
 }
 @media (max-width: 768px) {
   .footer {
@@ -921,12 +921,10 @@ h5 {
 }
 
 .footer__adress {
-  padding-top: 25px;
+  padding-top: 32px;
 }
-@media (max-width: 768px) {
-  .footer__adress {
-    padding-top: 21px;
-  }
+.footer__adress a {
+  font-size: 1.89rem;
 }
 @media (max-width: 320px) {
   .footer__adress {
@@ -966,6 +964,16 @@ h5 {
   color: #292929;
 }
 
+.header__wrapper .hamburger::after {
+  background-color: #000000;
+}
+.header__wrapper .hamburger::before {
+  background-color: #000000;
+}
+.header__wrapper .hamburger .hamburger__line {
+  background-color: #000000;
+}
+
 .navigation__link_text {
   color: #545454;
 }
@@ -986,20 +994,29 @@ h5 {
 }
 
 .pets__wrapper {
-  padding: 80px 0 105px 0;
+  padding: 80px 0 100px 0;
 }
 .pets__wrapper h3 {
   text-align: center;
   padding-bottom: 30px;
 }
 @media (max-width: 768px) {
+  .pets__wrapper {
+    padding: 80px 0 78px 0;
+  }
   .pets__wrapper h3 {
     padding-bottom: 0;
+  }
+}
+@media (max-width: 320px) {
+  .pets__wrapper {
+    padding: 42px 0 42px 0;
   }
 }
 
 .slider__items_pets {
   max-width: 100%;
+  gap: 36px 0;
 }
 @media (max-width: 768px) {
   .slider__items_pets {
@@ -1007,23 +1024,42 @@ h5 {
     justify-content: center;
   }
 }
-
-.slider__item_pets {
-  margin-top: 33px;
+@media (max-width: 320px) {
+  .slider__items_pets {
+    gap: 27px 0;
+  }
 }
 
 .pets__pagination {
-  padding-top: 60px;
+  padding-top: 65px;
   display: flex;
   justify-content: space-between;
   max-width: 340px;
   margin: auto;
 }
+@media (max-width: 768px) {
+  .pets__pagination {
+    padding-top: 38px;
+  }
+}
+@media (max-width: 320px) {
+  .pets__pagination {
+    padding-top: 41px;
+  }
+}
 
+.pets__slider {
+  padding-top: 29px;
+}
 @media (max-width: 768px) {
   .pets__slider {
     max-height: 1365px;
     overflow: hidden;
+  }
+}
+@media (max-width: 320px) {
+  .pets__slider {
+    padding-top: 41px;
   }
 }
 

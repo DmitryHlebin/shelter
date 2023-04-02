@@ -1,6 +1,6 @@
 .footer{
     background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    padding-top: 50px;
+    padding-top: 57px;
     @include media-tablet {
         padding-top: 29px;
     }
@@ -47,11 +47,11 @@ padding-top: 40px;
 }
 
 .footer__adress{
-    padding-top: 25px;
-    @extend %footer-link;
-    @include media-tablet {
-        padding-top: 21px;
+    padding-top: 32px;
+    a{
+        font-size: 1.89rem;
     }
+    @extend %footer-link;
     @include media-mobile {
         justify-content: flex-start;
         padding-top: 40px;
