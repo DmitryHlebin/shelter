@@ -1,0 +1,32 @@
+// .help__items{
+//     padding-top: 59px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     gap: 55px 120px;
+//     @include media-tablet {
+//         padding-top: 59px;
+//         max-width: 630px;
+//         gap: 0;
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//     }
+//     @include media-mobile {
+//         max-width: 290px;
+//         justify-content:center;
+//         padding-top: 36px;
+//         gap: 25px 56px;
+//         &:last-child{
+//             justify-content: flex-start;
+//         }
+
+//     }
+// }
+
+// .help__item {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+// }

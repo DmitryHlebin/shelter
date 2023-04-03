@@ -626,12 +626,12 @@ h5 {
 @media (max-width: 320px) {
   .help__items {
     max-width: 290px;
-    justify-content: center;
+    justify-content: space-around;
     padding-top: 36px;
     gap: 25px 56px;
   }
-  .help__items:last-child {
-    justify-content: flex-start;
+  .help__items .help__item:last-child {
+    padding-right: 150px;
   }
 }
 
@@ -640,6 +640,16 @@ h5 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 320px) {
+  .help__item h4 {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    color: #545454;
+  }
 }
 
 .help__icon {

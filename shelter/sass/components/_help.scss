@@ -33,12 +33,15 @@
     }
     @include media-mobile {
         max-width: 290px;
-        justify-content:center;
+        justify-content:space-around;
         padding-top: 36px;
         gap: 25px 56px;
-        &:last-child{
-            justify-content: flex-start;
+        .help__item{
+            &:last-child{
+                padding-right: 150px;
+            }
         }
+      
 
     }
 }
@@ -48,6 +51,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include media-mobile{
+        h4{
+            @include font(1.5rem, 1.65rem, $color-dark-l);
+        }
+    }
 }
 
 .help__icon {
