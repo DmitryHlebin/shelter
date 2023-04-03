@@ -648,7 +648,6 @@ h5 {
 @media (max-width: 320px) {
   .help__icon {
     padding-bottom: 14px;
-    padding-left: 40px;
   }
   .help__icon svg {
     max-width: 50px;
