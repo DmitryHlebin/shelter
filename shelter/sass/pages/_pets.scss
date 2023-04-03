@@ -17,19 +17,20 @@
     }
 }
 
-.header__wrapper{
-    .hamburger{
-        &::after{
-            background-color: $color-dark-4xl;
-        }
-        &::before{
-            background-color: $color-dark-4xl;
-        }
-        .hamburger__line{
-            background-color: $color-dark-4xl;  
-        }
-    }
-}
+// .header__wrapper{
+//     .hamburger{
+//         &::after{
+//             background-color: $color-dark-4xl;
+//         }
+//         &::before{
+//             background-color: $color-dark-4xl;
+//         }
+//         .hamburger__line{
+//             background-color: $color-dark-4xl;  
+//         }
+//     }
+// }
+
 .navigation__link_text{
     color: $color-dark-l;
 }

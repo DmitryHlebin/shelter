@@ -1,6 +1,6 @@
 .footer{
     background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-    padding-top: 57px;
+    padding-top: 39px;
     @include media-tablet {
         padding-top: 29px;
     }
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     @include media-tablet {
         justify-content: center;
-        gap: 63px 48px;
+        gap: 63px 52px;
     }
     @include media-mobile{
         gap: 39px 48px;
@@ -25,8 +25,12 @@
 
 .footer_question{
     max-width: 290px;
+    padding-top: 16px;
     h3{
        color: $color-light-xl;
+    }
+    @include media-tablet{
+        padding-top: 0;  
     }
     @include media-mobile {
         text-align: center;
@@ -66,8 +70,12 @@ padding-top: 40px;
 
 .footer_visit{
     max-width: 290px;
+    padding-top: 16px;
     h3{
        color: $color-light-xl;
+    }
+    @include media-tablet{
+        padding-top: 0;  
     }
     @include media-mobile {
         text-align: center;

@@ -1,9 +1,6 @@
 .donation{
     background: $color-light-l;
-    padding: 80px 0 105px 0;
-    @include media-tablet{
-        padding: 80px 0 100px 0;
-    }
+    padding: 80px 0 102px 0;
     @include media-mobile {
         padding: 41px 0 42px 0;
     }
@@ -14,7 +11,7 @@
     justify-content: center;
     align-items:start;
     flex-wrap: wrap-reverse;
-    gap: 30px;
+    gap: 0;
 
     img{
         padding-top: 10px;
@@ -49,6 +46,7 @@
         padding-left: 0;
     }
     @include media-mobile {
+        max-width: 280px;
         align-items: center;
         justify-content: center;
         h5{
@@ -88,7 +86,7 @@
         justify-content: center;
         align-items: center;
         p{
-            @include font(1.5rem, 1.65rem, $color-dark-l);
+            @include font(1.48rem, 1.65rem, $color-dark-l);
         }
     }
 }
@@ -96,6 +94,9 @@
 .donation__subscribe{
     padding-top: 20px;
     @include font(1.19rem, 1.8rem, $color-dark-m, Arial, italic);
+    @include media-mobile{
+        @include font(1.1rem, 1.8rem, $color-dark-m, Arial, italic);
+    }
 }
 
 .donation__number-card{

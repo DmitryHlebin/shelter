@@ -2,7 +2,6 @@
     content: "";
     display: inline-block;
     position: absolute;
-    background-color: $color-primary;
     width: 30px;
     height: 2px;
 }
@@ -13,23 +12,46 @@
     width: 30px;
     height: 20px;  
     display: none;
-    @include media-mobile {
+    @include media-burger {
         display: block;
+        padding-right: 40px;
+    }
+    @include media-mobile {
         padding-right: 40px;
     }
     &:before{
         @extend %hamburger-line;
+        background-color: $color-primary;
         top: 0;
         left: 0;
     }
     &:after{
         @extend %hamburger-line;
+        background-color: $color-primary;
         bottom: 0;
         left: 0;
+    }
+    &_pets{
+        &:before{
+            @extend %hamburger-line;
+            background-color: $color-dark-4xl; 
+            top: 0;
+            left: 0;
+        }
+        &:after{
+            @extend %hamburger-line;
+            background-color: $color-dark-4xl; 
+            bottom: 0;
+            left: 0;
+        }
     }
 }
 
 .hamburger__line{
     @extend %hamburger-line;
+    background-color: $color-primary;
     top: calc(50% - 1px);
+    &_pets{
+        background-color: $color-dark-4xl; 
+    }
 }

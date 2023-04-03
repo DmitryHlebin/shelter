@@ -26,12 +26,13 @@
     flex-wrap: wrap;
     gap: 55px 120px;
     @include media-tablet {
-        padding-top: 56px;
+        padding-top: 59px;
         justify-content: space-evenly;
         max-width: 630px;
         gap: 53px 84px;
     }
     @include media-mobile {
+        max-width: 290px;
         justify-content:center;
         padding-top: 36px;
         gap: 25px 56px;
@@ -53,7 +54,7 @@
     padding-bottom: 30px;
     @include media-mobile {
         padding-bottom: 14px;
-
+        padding-left: 40px;
         svg{
             max-width: 50px;
         }

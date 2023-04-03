@@ -14,6 +14,9 @@
 @mixin media-tablet {
     @media (max-width: $tablet-width) {@content;}
 }
+@mixin media-burger {
+    @media (max-width: $tablet-burger-width) {@content;}
+}
 
 @mixin media-mobile {
     @media (max-width: $mobile-width) {@content;}
