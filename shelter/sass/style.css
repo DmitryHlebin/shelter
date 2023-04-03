@@ -515,7 +515,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
 }
 @media (max-width: 768px) {
