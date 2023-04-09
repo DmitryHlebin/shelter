@@ -12,12 +12,14 @@
     width: 30px;
     height: 20px;  
     display: none;
+    transition: all 0.5s ease-in-out;
     @include media-burger {
         display: block;
-        padding-right: 40px;
+        margin-right: 53px;
+        z-index: 3;
     }
     @include media-mobile {
-        padding-right: 40px;
+        margin-right: 40px;
     }
     &:before{
         @extend %hamburger-line;
@@ -55,3 +57,28 @@
         background-color: $color-dark-4xl; 
     }
 }
+input{
+    display: none;
+}
+
+// input:checked ~ .header__navigation {
+//    right: 0;
+//    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.5)
+// }
+
+.header__navigation_aktiv {
+    right: 0 !important;
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.5)
+ }
+
+// input:checked ~ .hamburger {
+//     transform: rotate(90deg);
+//     position: fixed;
+//     right: 0;
+//  }
+
+.hamburger_aktiv {
+    transform: rotate(90deg);
+    position: fixed;
+    right: 0;
+ }

@@ -174,6 +174,10 @@ h5 {
   }
 }
 
+.body {
+  overflow: hidden;
+}
+
 .button {
   padding: 15px 45px;
   border-radius: 100px;
@@ -296,16 +300,18 @@ h5 {
   width: 30px;
   height: 20px;
   display: none;
+  transition: all 0.5s ease-in-out;
 }
 @media (max-width: 767px) {
   .hamburger {
     display: block;
-    padding-right: 40px;
+    margin-right: 53px;
+    z-index: 3;
   }
 }
 @media (max-width: 320px) {
   .hamburger {
-    padding-right: 40px;
+    margin-right: 40px;
   }
 }
 .hamburger:before {
@@ -335,6 +341,21 @@ h5 {
 }
 .hamburger__line_pets {
   background-color: #000000;
+}
+
+input {
+  display: none;
+}
+
+.header__navigation_aktiv {
+  right: 0 !important;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger_aktiv {
+  transform: rotate(90deg);
+  position: fixed;
+  right: 0;
 }
 
 .header-promo-wrapper {
@@ -831,6 +852,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
 }
+
 .header__logo {
   text-decoration: none;
   display: flex;
@@ -870,9 +892,30 @@ h5 {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 767px) {
+  .navigation__link .paragraph-l {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 5.12rem;
+    color: #CDCDCD;
+  }
+  .navigation__link .aktive-link {
+    color: #FAFAFA;
+  }
+}
 
 .navigation__wrapper {
   display: flex;
+}
+@media (max-width: 767px) {
+  .navigation__wrapper {
+    padding-top: 158px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0;
+  }
 }
 
 .aktive-link {
@@ -882,9 +925,25 @@ h5 {
   text-decoration: none;
 }
 
+.header__navigation .header__logo {
+  display: none;
+}
 @media (max-width: 767px) {
   .header__navigation {
-    display: none;
+    padding: 0 10px;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    background-color: #292929;
+    z-index: 2;
+  }
+  .header__navigation .header__logo {
+    display: block;
+    padding-top: 30px;
+    align-items: start;
   }
 }
 
