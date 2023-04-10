@@ -540,7 +540,6 @@ input {
   overflow: hidden;
   gap: 0 90px;
   position: relative;
-  left: -100%;
 }
 @media (max-width: 768px) {
   .slider__items {
