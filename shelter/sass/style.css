@@ -537,7 +537,10 @@ input {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100%;
+  overflow: hidden;
+  gap: 0 90px;
+  position: relative;
+  left: -100%;
 }
 @media (max-width: 768px) {
   .slider__items {
