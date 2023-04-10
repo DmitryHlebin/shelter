@@ -1073,6 +1073,11 @@ input {
   border-bottom: 3px solid #F1CDB3;
   color: #292929;
 }
+@media (max-width: 767px) {
+  .aktive-link-pets {
+    color: #FAFAFA !important;
+  }
+}
 
 .navigation__link_pets .navigation__link_text:hover {
   transition: all 0.3s ease-in-out;
@@ -1140,6 +1145,9 @@ input {
 
 .pets__slider {
   padding-top: 29px;
+}
+.pets__slider .slider__items_pets {
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .pets__slider {

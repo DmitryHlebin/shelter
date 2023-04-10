@@ -39,6 +39,9 @@
     padding-bottom: 2px;
     border-bottom: 3px solid $color-primary;
     color: $color-dark-3xl;
+    @include media-burger {
+            color: $color-light-s !important;
+    }
 }
 
 .navigation__link_pets{
@@ -74,6 +77,7 @@
 .slider__items_pets{
     max-width: 100%;
     gap: 36px 0;
+    
     @include media-tablet{
         flex-wrap: wrap;
         justify-content: center;
@@ -98,6 +102,9 @@
 }
 
 .pets__slider{
+    .slider__items_pets{
+        flex-wrap: wrap;
+    }
     padding-top: 29px;
     @include media-tablet {
         max-height: 1365px;

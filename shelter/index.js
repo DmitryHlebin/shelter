@@ -25,17 +25,7 @@ for (let i = 0; i < LINKS.length; i++) {
     LINKS[i].addEventListener('click', deleteHamburger)
   }
 
-// // клик по затемненной области
-// document.onclick = function(e) {
-  
-//         if ((e.target != HEADER__NAVIGATION) && (e.target != navigation__wrapper)) {
-//             // BODY.classList.remove('body');
-//             // HEADER__NAVIGATION.classList.remove('header__navigation_aktiv');
-//             // HAMBURGER.classList.remove('hamburger_aktiv');
-//         }
-    
-// }
-
+  //клик по затемненной
 document.addEventListener('click', (e) => {
     const click = e.composedPath().includes(HEADER__NAVIGATION);
     const click_hamburger = e.composedPath().includes(HAMBURGER);
@@ -48,3 +38,4 @@ document.addEventListener('click', (e) => {
     }
 })
     
+console.log('hi')
