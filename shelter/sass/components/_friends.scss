@@ -44,19 +44,18 @@
 }
 
 .slider__items{
-    max-width: 990px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap:nowrap;
-    overflow: hidden;
     gap: 0 90px;
-    position: relative;
     @include media-tablet {
         max-width: 580px;
         overflow: hidden;
         flex-wrap: nowrap;
+        gap: 0 40px;
+    }
+    @include media-tablet {
+        gap: 0 30px;
     }
 }
 

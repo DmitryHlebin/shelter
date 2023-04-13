@@ -1,0 +1,34 @@
+.slider__wrapper{
+    max-width: 990px;
+    overflow: hidden;
+    @include media-tablet{
+        max-width: 580px;  
+    }
+    @include media-mobile{
+        max-width: 270px;  
+    }
+}
+
+.carousel{
+    display: flex;
+    position: relative;
+    left: -100%;
+}
+
+@keyframes move-right {
+    from {left: -100%;}
+    to {left: -200%;}
+  }
+  
+  .transition-right {
+    animation: move-right 5s;
+  }
+  
+  @keyframes move-left {
+    from {left: -100%;}
+    to {left: 0;}
+  }
+  
+  .transition-left {
+    animation: move-left 5s;
+  }
